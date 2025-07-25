@@ -83,11 +83,9 @@ console.log(str3);
 
 console.log(+true);
 //console.log(true+);   //this will give an error
-let num1, num2, num3
-num1=num2=num3= 2+2
+//let num1, num2, num3
+//num1=num2=num3= 2+2
 
 let gameCounter =100
 ++gameCounter; // Increment operator
 console.log(gameCounter);
-
-
