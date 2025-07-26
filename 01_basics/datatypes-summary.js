@@ -35,3 +35,23 @@ console.log(typeof myFunction); //the type of function is object function
 console.log(typeof myObj);  //the type of object is object
 console.log(typeof heros);  //the type of array is object
 
+//**************************************************************************************************/
+
+//   Stack(Primitive),     Heap(Non-Primitive)
+
+let myName = "Prachi"
+let anotherName = myName
+anotherName = "Pooja"
+console.log(myName); // "Prachi"
+console.log(anotherName); // "Pooja" because primitive values are stored in stack memory and copied by value
+
+
+let userOne = {
+    email : "xyz@gmail.com",
+    userId: "1234"
+}
+let userTwo = userOne;
+userTwo.email = "ytz@gmail.com"
+
+console.log(userOne.email); // because non-primitive values are stored in heap memory and copied by reference
+console.log(userTwo.email); // both userOne and userTwo point to the same object in memory
