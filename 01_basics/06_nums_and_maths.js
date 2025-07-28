@@ -19,7 +19,21 @@ console.log(hundreds.toLocaleString())    //output 1,000,000 bydefault it conver
 console.log(hundreds.toLocaleString('en-IN'))  //gives output in indian number system 10,00,000
 
 /*******************************************Maths**************************************************/
-console.log(Math)
-console.log(Math.abs(-4))
-console.log(Math.abs(4))
-console.log(Math.round(4.3))
+//console.log(Math)
+console.log(Math.abs(-4))   //Converts +ve / -ve integer values to positive -output 4
+console.log(Math.abs(4))     //output 4
+console.log(Math.round(4.3))    //output 4
+console.log(Math.round(4.6))   // round off the value and gives output 5
+console.log(Math.ceil(4.2))    //gives top value ,makes 4.2 as 5
+console.log(Math.floor(4.7))    //gives lower value , makes 4.7 as 4
+console.log(Math.min(3,4,2,5,1,6))   //output 1
+
+console.log(Math.random());    //it gives random values between 0 and 1
+console.log(Math.random()*10)   //it will move the decimal point and gives output b/w 1 to 10
+console.log(Math.random()*10 +1)  // This assures that values are atleast 1 & more than 1
+console.log((Math.random()*10) +1)  //To avoid any BODMAS rule miscalculation
+
+//---- Trick to randomize value between range ----
+const min = 10
+const max = 20
+console.log(Math.floor((Math.random() * (max - min + 1)) + min))
