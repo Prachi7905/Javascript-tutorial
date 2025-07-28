@@ -26,10 +26,17 @@ console.log(myCreatedDate1.toLocaleString())   // 1/28/2025, 9:18:00 AM
 let myCreatedDate2 = new Date ("2025-07-28")  //this is YY-MM-DD format, you can also write DD-MM-YY format
 console.log(myCreatedDate2.toLocaleString())  // output 7/28/2025, 12:00:00 AM (month will start from 1)
 
-
-/***************************************** Time ***************************************/
-
 let myTimeStamp = Date.now()
-console.log(myTimeStamp)             // 1753714925480
+//console.log(myTimeStamp)             // 1753714925480 -values are in millisecond
+//console.log(myCreatedDate.getTime()) //1738022400000 -ms
+//console.log(Math.floor(Date.now()/1000))
 
+let newDate = new Date()
+console.log(newDate)           //2025-07-28T16:44:28.559Z
+console.log(newDate.getMonth())   // 6 (july)
+console.log(newDate.getDay())   // 1 (monday)
 
+newDate.toLocaleString('default', {
+    calendar : "myDate",
+    weekday : "long",
+})                                      
