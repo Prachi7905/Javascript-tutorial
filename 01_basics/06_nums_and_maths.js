@@ -1,3 +1,5 @@
+/*********************************************Num************************************************/
+
 const score = 400  //javascript by default consider this as number but sometimes we want to explicitly define the value as number
 console.log(score)
 const balance = new Number(100)   //defined in a new Number which is object type
