@@ -18,10 +18,10 @@ console.log(`DB CONNECTED TWO`)
 
 } )();
 
-// ( ()=> {
-// console.log(`DB CONNECTED THREE`)
-// } 
-// )();
+( ()=> {
+console.log(`DB CONNECTED THREE`)
+} 
+)();
 
 // for variables
 ( (name)=> {            // This is simple IIFE
