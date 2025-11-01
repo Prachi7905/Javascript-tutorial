@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Prachi Pandey</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Prachi")
+    // }, 2000)
+    const sayPrachi= function(){
+        console.log("Prachi");
+    }
+    const changeText = function(){
+    document.querySelector('h1')
+    .innerHTML="Best JS Series"
+    }
+    //setTimeout(sayPrachi, 2000)
+    setTimeout(changeText, 2000)  // give reference here
+
+    const changeMe = setTimeout(changeText,2000)
+    document.querySelector('#stop').
+    addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+</script>
+</html>
