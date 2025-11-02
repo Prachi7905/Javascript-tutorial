@@ -9,7 +9,9 @@ const randomColor = function(){
 }
 let intervalId //scope
 const startChangingColor = function(){
-    intervalId= setInterval(changeBgColor,1000);
+    if(!intervalId){
+        intervalId= setInterval(changeBgColor,100);
+    }
     function changeBgColor(){
         document.body.style.backgroundColor=randomColor();
     }
@@ -20,10 +22,10 @@ const stopChangingColor = function(){
 } 
 
 document.querySelector('#start').addEventListener
-('click',startChangingColor)
+    ('click',startChangingColor)
 
 document.querySelector('#stop').addEventListener
-('click',stopChangingColor)
+    ('click',stopChangingColor)
 //console.log(randomColor());
 //(Math.random() *16)
 //console.log(Math.floor((Math.random() *16)));
