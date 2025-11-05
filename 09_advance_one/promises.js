@@ -85,5 +85,14 @@ promiseFour.then((user) => {
 //  }
 //  getAllUsers()
 
+fetch('https://api.github.com/users/Prachi7905')
+.then((response)=>{
+    return response.json()
+})
+.then((data)=>{
+    console.log(data);
+    
+})
+.catch((error)=> console.log(error))
 
 
