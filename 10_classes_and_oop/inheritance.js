@@ -14,7 +14,7 @@ class Teacher extends User{
         this.password = password
     }
     addCourse(){
-        console.log(`A new course was added by ${this.
+        console.log(`A new Course was added by ${this.
             username}`);
     }
 
